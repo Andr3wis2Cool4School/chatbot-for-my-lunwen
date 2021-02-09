@@ -50,7 +50,7 @@ We will used the neural network.
 1. So what is the inputs and output of our model?
 2. What we expect our neural network to learn?
 
-**----------------------------------------------------------------------------------Line----------------------------------------------------------------------------------**
+**----------------------------------------------------------------------Line--------------------------------------------------------------------**
    
 1. The answer is that we input our words, and what we want the neural network to do is to predict the next word.
 2. To learn how to predict the next word by given a sequence of words.
