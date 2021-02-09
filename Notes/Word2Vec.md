@@ -79,6 +79,42 @@ Knowing the Word to predict the context, we can use Skip-Gram.
 
 The input will be different.
 
+# Time can be long 
+Because it is a multi-classification problem. When the doc catains lots of words, the processing time of our Neural Network can be long. Because the output can have lots of different words. 
+One way to improve this is that we not only input the word which we want to predict waht next word after this word, instead we input the word and the word next to it. And we output the possibility of how much the word next to the word can be.
+
+
+![image](image/2.png)
+
+We should except the output value to be 1.
+The more the output differ than 1, the more work we need to adjust our neural network. 
+
+
+This is a good start Point, originally this is a multi-classification problem. We canvert it into a binary calssification problem. True or False. But this can lead to one issue. If we are doing this, the Output of our Neural Network are all ones, this can not be a good training for our Neural Network.
+
+**So we need to add some words that is not in the doc previously.**
+
+So we need to use Negativesample-model.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 We will use gensim package.
 
 
