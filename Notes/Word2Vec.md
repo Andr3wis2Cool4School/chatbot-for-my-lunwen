@@ -43,9 +43,14 @@ As the higher dimension a word vector have, the more information we can get from
 
 ### Training the word vector Model
 
+
+#### Overview
+
 We will used the neural network.
 1. So what is the inputs and output of our model?
 2. What we expect our neural network to learn?
+
+**----------------------------------------------------------------------------------**
    
 1. The answer is that we input our words, and what we want the neural network to do is to predict the next word.
 2. To learn how to predict the next word by given a sequence of words.
@@ -53,6 +58,9 @@ We will used the neural network.
 
 The output basically the possibility of the word that are coming next. It is as simialr as a output of a softmax function.
 Therefore, it is multi-classification problem.
+
+#### A word can not be input into the neural network, so how we can input the word into the NN?
+We can look up the embeddings. Get the word vector in the big table of the word. In the big table which is called embeddings table (Self define) to get the word vector.
 
 
 
