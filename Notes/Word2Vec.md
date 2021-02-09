@@ -63,15 +63,23 @@ Therefore, it is multi-classification problem.
 #### A word can not be input into the neural network, so how we can input the word into the NN?
 We can look up the embeddings. Get the word vector in the big table of the word. In the big table which is called embeddings table (Self define) to get the word vector.
 
+For more are in the implmention part.
+
+
+## Compare with two differen model
 
 
 
 
+Word2vec can utilize either of two model architectures to produce a distributed representation of words: continuous bag-of-words (CBOW) or continuous skip-gram. In the continuous bag-of-words architecture, the model predicts the current word from a window of surrounding context words. The order of context words does not influence prediction (bag-of-words assumption). In the continuous skip-gram architecture, the model uses the current word to predict the surrounding window of context words. The skip-gram architecture weighs nearby context words more heavily than more distant context words. According to the authors' note, CBOW is faster while skip-gram is slower but does a better job for infrequent words.
 
+Knowing the context to predict a word in the sentence, we can use CBOW.
 
+Knowing the Word to predict the context, we can use Skip-Gram.
 
+The input will be different.
 
-
+We will use gensim package.
 
 
 
@@ -98,6 +106,7 @@ Source From:
 - https://www.bilibili.com/video/BV1F7411x749?p=2&spm_id_from=pageDriver
 - https://www.youtube.com/watch?v=Z1VsHYcNXDI
 - https://www.google.com/search?sxsrf=ALeKk00_iRRwGn_ugTWkxm8EsI2HjcEtMA%3A1612874806719&ei=NoQiYPqwK9el-Qb_8IvoDA&q=softmax+vs+sigmoid&oq=softmax+&gs_lcp=CgZwc3ktYWIQARgAMgQIABBDMgQIABBDMgQIABBDMgQIABBDMgQIABBDMgQIABBDMgQIABBDMgQIABBDMgQIABBDMgUIABDLAToHCAAQRxCwAzoHCAAQsAMQQ1CgE1igE2DqImgBcAJ4AIABjQOIAckEkgEHMC4xLjAuMZgBAKABAaoBB2d3cy13aXrIAQrAAQE&sclient=psy-ab
+- https://en.wikipedia.org/wiki/Word2vec
   
 
 
