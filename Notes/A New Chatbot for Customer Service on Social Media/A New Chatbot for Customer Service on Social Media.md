@@ -57,5 +57,14 @@ Three different kinds
 
 ![image](image/3.png)
 
+# EVALUATION
+Content Analysis, I still don't know what the fuck it is.
+
+The system was alse compared with actual human agents.
+
+They also used ANOVA test. 
 
 
+
+# Future Work
+Can build a specific area chatbot to fit the need to emtional request of user.
