@@ -1,3 +1,4 @@
 {
-    "jupyter.jupyterServerType": "remote"
+    "jupyter.jupyterServerType": "remote",
+    "python.pythonPath": "/Users/luoyifeng/opt/anaconda3/bin/python"
 }
